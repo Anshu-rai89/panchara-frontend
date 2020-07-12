@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 import LandingHero from "./LandingHero.vue";
 import LandingShowcase from "./LandingShowcase.vue";
 import LandingServices from "./LandingServices.vue";

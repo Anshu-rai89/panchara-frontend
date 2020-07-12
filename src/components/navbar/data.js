@@ -3,7 +3,7 @@ import * as ROUTES from "@/scripts/constants/routes";
 export default [
     {
         title: "Home",
-        link: ROUTES.HOME,
+        link: "/home",
     },
     {
         title: "About Us",
@@ -13,8 +13,8 @@ export default [
         title: "Services",
         link: ROUTES.SERVICES,
     },
-    {
-        title: "Contact Us",
-        link: ROUTES.CONTACT_US,
-    },
+    // {
+    //     title: "Contact Us",
+    //     link: ROUTES.CONTACT_US,
+    // },
 ];

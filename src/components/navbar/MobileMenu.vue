@@ -12,6 +12,7 @@
                 class="li"
                 v-for="(item, key) in navlinks"
                 :key="item.title+key"
+                @click="clickEvent(item.link)"
             >
                 <router-link class="link" :to="item.link" :exact="item.link=='/'">
                     {{ item.title }}
@@ -62,6 +63,9 @@ export default {
                 mobileMenu.style.height = "";
             }
         },
+    },
+    props: {
+        clickEvent: Function,
     },
 };
 </script>
