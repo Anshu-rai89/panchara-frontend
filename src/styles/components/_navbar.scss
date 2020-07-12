@@ -5,9 +5,14 @@
 // dimension variables are defines in variables/_component_dim.scss
 // fonts variables are defines in variables/_fonts.scss
 
+$background: linear-gradient(180deg, rgba(255, 255, 255, 0) 23.96%, rgba(0, 0, 0, 0.25) 100%),
+rgba(137, 91, 66, 0.81);
+
 .navbar {
+    background: $background;
     height: $navbar-height;
     left: 0;
+    padding: 0 1rem;
     position: fixed;
     right: 0;
     top: 0;
@@ -19,6 +24,7 @@
     }
 
     .logo-container {
+        align-items: center;
         display: flex;
         justify-content: flex-start;
         max-width: px2rem(200);
@@ -29,15 +35,21 @@
         height: 3em;
     }
 
+    .logo-title {
+        height: 1rem;
+        margin-left: 1rem;
+    }
+
     .menu-container {
         display: flex;
+        flex: 1;
         justify-content: flex-start;
-        width: px2rem(800);
     }
 
     .ul {
         display: inline-flex;
         flex: 1;
+        justify-content: flex-end;
         list-style-type: none;
         padding: 0 px2rem(32);
     }
@@ -51,39 +63,12 @@
         align-items: center;
         color: $white;
         display: flex;
-        font-family: $heading-bold;
+        font-family: $heading-regular;
         position: relative;
     }
 
-    &.scroll {
-        background: $white;
-        box-shadow: 0 0 px2rem(20) px2rem(2) rgba(0, 0, 0, 0.14);
-    }
-
-    &.scroll .link {
-        color: $black;
-    }
-
-    .link:after {
-        background: $primary;
-        bottom: 0;
-        content: '';
-        position: absolute;
-        height: px2rem(4);
-        width: 0;
-        left: 0;
-        margin: auto;
-        right: 0;
-        transition: 0.3s;
-    }
-
-    .li:hover .link:after,
-    .li .link.router-link-active:after {
-        width: 100%;
-    }
-
     .li .link.router-link-active {
-        color: $primary;
+        font-family: $heading-bold;
     }
 }
 
@@ -97,9 +82,8 @@
     }
 
     .ul {
-        background: $white;
-        border-bottom: 0.0625rem solid darken($color: $white, $amount: 10);
-        border-top: 0.0625rem solid darken($color: $white, $amount: 10);
+        background: $background;
+        display: block;
         flex-direction: column;
         height: 0;
         left: 0;
