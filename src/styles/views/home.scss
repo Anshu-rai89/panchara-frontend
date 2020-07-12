@@ -5,7 +5,56 @@
 @import "../abstract";
 @import "../variables";
 
+.body-container {
+    margin-top: $navbar-height;
+}
 
-@media screen and (max-width: $tablet-screen) {}
+.landing-hero {
+    height: px2rem(500);
+    position: relative;
+}
 
-@media screen and (max-width: $mobile-screen) {}
+.landing-title {
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    transform: translateX(-50%) translateY(-50%);
+
+    .dot {
+        background: $white;
+        border-radius: 50%;
+        display: inline-block;
+        height: 0.5rem;
+        margin: 0 1rem;
+        width: 0.5rem;
+    }
+}
+
+.landing-hero-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+@media screen and (max-width: $tablet-screen) {
+    .body-container {
+        margin-top: $mobile-navbar-height;
+    }
+}
+
+@media screen and (max-width: $mobile-screen) {
+
+    .landing-hero {
+        height: px2rem(300)
+    }
+
+    .landing-title {
+        font-size: 1.5rem;
+    }
+
+}

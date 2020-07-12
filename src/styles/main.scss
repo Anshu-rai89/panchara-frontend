@@ -8,6 +8,4 @@
 @import "./layout";
 @import "./misc";
 @import "./components";
-
-// We didn't import all scss of view here.
-// View scss are generally scoped and they are only imported by their respective owner.
+@import "./views/home";
