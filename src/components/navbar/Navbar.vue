@@ -1,11 +1,13 @@
 <template>
-    <header class="navbar container flex align-center" id="header">
-        <router-link to="/" class="logo-container">
-            <img class="logo" :src="PancharaLogo"/>
-            <img class="logo-title" :src="PancharaLogoTitle" />
-        </router-link>
-        <DesktopMenu />
-        <MobileMenu />
+    <header class="navbar flex" id="header">
+        <div class="navbar-wrapper flex align-center flex-1">
+            <router-link to="/" class="logo-container">
+                <img class="logo" :src="PancharaLogo"/>
+                <img class="logo-title" :src="PancharaLogoTitle" />
+            </router-link>
+            <DesktopMenu />
+            <MobileMenu />
+        </div>
     </header>
 </template>
 
