@@ -93,6 +93,16 @@
     width: 80%
 }
 
+
+.about-us {
+    background: rgba(230, 255, 240, 0.74);
+    padding: 5rem 2rem;
+}
+
+.about-wrapper {
+    display: flex;
+}
+
 @media screen and (max-width: $tablet-screen) {
     .body-container {
         margin-top: $mobile-navbar-height;
@@ -118,6 +128,14 @@
 
     .landing-title {
         font-size: 1.5rem;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+
+        &>div {
+            padding: 2rem 0;
+        }
     }
 
 }

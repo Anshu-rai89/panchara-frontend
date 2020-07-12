@@ -94,6 +94,14 @@
     }
 }
 
+.round-card {
+    border-radius: 50%;
+    box-shadow: px2rem(10) px2rem(10) px2rem(50) rgba(0, 0, 0, 0.15);
+    height: px2rem(280);
+    overflow: hidden;
+    width: px2rem(280);
+}
+
 @media screen and (max-width: $tablet-screen) {
 
     .card-section {

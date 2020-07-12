@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section" id="showcase">
       <div class="heading-container">
           <h3 class="heading">Invite nature <br />to your homeland</h3>
           <p class="heading-para">We Design Your Space Of Comfort</p>

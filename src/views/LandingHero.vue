@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-hero">
+  <div class="landing-hero" id="home">
       <img
         src="@/assets/images/png/landing-background.png"
         class="landing-hero-img"
