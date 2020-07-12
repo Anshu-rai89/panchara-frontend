@@ -1,0 +1,158 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+@import "../abstract";
+@import "../variables";
+
+.landing-image-wrapper {
+    height: px2rem(600);
+}
+
+.landing-image-container {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    img {
+        filter: grayscale(100);
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.landing-intro {
+    display: flex;
+    justify-content: flex-end;
+    min-height: px2rem(400);
+    padding: 3rem 0;
+    position: absolute;
+    top: $navbar-height;
+    z-index: 10;
+
+    .container {
+        max-width: px2rem(475);
+        padding-right: px2rem(25);
+        width: 100%;
+    }
+
+    h3 {
+        margin: 1rem 0;
+    }
+
+    .button {
+        margin-top: 4rem;
+    }
+
+    .button:hover {
+        background: darken($color: $white, $amount: 5);
+    }
+}
+
+.world-map-bg {
+    background: url("~@/assets/images/png/home/world-map-dotted.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    bottom: -2rem;
+    left: 0;
+    min-height: px2rem(300);
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    width: 100%;
+}
+
+
+.home {
+    $card-height: 330;
+
+    .card-container {
+        height: px2rem(2*$card-height);
+    }
+
+    .card {
+        height: px2rem($card-height);
+        max-width: 25%;
+    }
+}
+
+.tree-section {
+    background: #0081B7;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: $tablet-screen) {
+
+    .landing-image-wrapper {
+        display: flex;
+        padding-top: $mobile-navbar-height;
+    }
+
+    .landing-image-container {
+        position: relative;
+        flex: 1;
+        order: 2;
+    }
+
+    .landing-intro {
+        bottom: 0;
+        flex: 1;
+        order: 1;
+        padding-left: 1rem;
+        position: relative;
+        top: 0;
+    }
+
+    .home .card-row {
+        flex-wrap: wrap;
+    }
+
+    .home .card {
+        border: px2rem(1) solid darken($color: $white, $amount: 30);
+        flex: auto;
+        max-width: 100%;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: $mobile-screen) {
+    .landing-image-container {
+        display: flex;
+    }
+
+    .landing-image-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .landing-intro {
+        justify-content: center;
+        order: 2;
+        padding: 2rem;
+    }
+
+    .landing-image-container {
+        order: 1
+    }
+
+    .card-technologies {
+        margin-right: 0.3rem
+    }
+
+    .home .card {
+        width: 100%;
+    }
+
+    .tree-section {
+        img {
+            transform: scale(0.6) translateY(152px);
+        }
+    }
+}

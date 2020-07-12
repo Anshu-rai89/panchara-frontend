@@ -1,0 +1,51 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+
+.section {
+    &.p-t-b {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    &.p-l-r {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    &.m-t-b {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &.m-l-r {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: $mobile-screen) {
+    .section {
+        &.p-t-b {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        &.p-l-r {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        &.m-t-b {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        &.m-l-r {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+}

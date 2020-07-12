@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": ["**/*.js", "**/*.vue"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}

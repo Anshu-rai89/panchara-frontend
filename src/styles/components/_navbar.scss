@@ -1,0 +1,149 @@
+/**
+* @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+*/
+
+// dimension variables are defines in variables/_component_dim.scss
+// fonts variables are defines in variables/_fonts.scss
+
+.navbar {
+    height: $navbar-height;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    z-index: 999;
+
+    .mobile {
+        display: none;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: flex-start;
+        max-width: px2rem(200);
+        width: 100%;
+    }
+
+    .logo {
+        height: 3em;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: flex-start;
+        width: px2rem(800);
+    }
+
+    .ul {
+        display: inline-flex;
+        flex: 1;
+        list-style-type: none;
+        padding: 0 px2rem(32);
+    }
+
+    .li {
+        margin-right: px2rem(16)
+    }
+
+    .link {
+        align-self: stretch;
+        align-items: center;
+        color: $white;
+        display: flex;
+        font-family: $heading-bold;
+        position: relative;
+    }
+
+    &.scroll {
+        background: $white;
+        box-shadow: 0 0 px2rem(20) px2rem(2) rgba(0, 0, 0, 0.14);
+    }
+
+    &.scroll .link {
+        color: $black;
+    }
+
+    .link:after {
+        background: $primary;
+        bottom: 0;
+        content: '';
+        position: absolute;
+        height: px2rem(4);
+        width: 0;
+        left: 0;
+        margin: auto;
+        right: 0;
+        transition: 0.3s;
+    }
+
+    .li:hover .link:after,
+    .li .link.router-link-active:after {
+        width: 100%;
+    }
+
+    .li .link.router-link-active {
+        color: $primary;
+    }
+}
+
+.navbar .mobile {
+    .menu {
+        align-items: center;
+        cursor: pointer;
+        display: inline-flex;
+        margin-right: 2rem;
+
+    }
+
+    .ul {
+        background: $white;
+        border-bottom: 0.0625rem solid darken($color: $white, $amount: 10);
+        border-top: 0.0625rem solid darken($color: $white, $amount: 10);
+        flex-direction: column;
+        height: 0;
+        left: 0;
+        overflow: auto;
+        position: fixed;
+        right: 0;
+        top: $mobile-navbar-height;
+        transition: 0.5s;
+    }
+
+    .link {
+        padding: 0.5rem 0;
+
+    }
+
+    .li {
+        border-bottom: 0.0625rem solid darken($color: $white, $amount: 10);
+        display: block;
+    }
+
+    .li .link {
+        flex: 1;
+    }
+
+    .link:after {
+        background: 0;
+    }
+}
+
+@media screen and (max-width: $tablet-screen) {
+    .navbar {
+        height: $mobile-navbar-height;
+
+        .logo {
+            height: 2rem;
+            margin-left: 2rem;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: flex;
+        }
+    }
+}

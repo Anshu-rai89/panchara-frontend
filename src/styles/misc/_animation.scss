@@ -1,0 +1,47 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+.pop-out-enter-active,
+.pop-out-leave-active {
+    transition: all 0.5s;
+}
+
+.pop-out-enter,
+.pop-out-leave-active {
+    opacity: 0;
+    transform: translateY(1.5rem);
+}
+
+
+.slide-in-animation {
+    animation: slide-in 1s ease-in-out 1 forwards;
+}
+
+.zoom-in-animation {
+    animation: zoom-in 1s cubic-bezier(1, .04, .27, 1.55) 1 forwards;
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-6rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}

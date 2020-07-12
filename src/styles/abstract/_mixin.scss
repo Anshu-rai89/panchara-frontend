@@ -1,0 +1,29 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+@mixin font($font-family, $font-file, $font-type) {
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file) format($font-type);
+        font-display: fallback;
+    }
+}
+
+@mixin keyframe($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}

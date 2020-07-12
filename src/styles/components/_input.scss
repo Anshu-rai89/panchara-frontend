@@ -1,0 +1,35 @@
+.input,
+.textarea {
+    background-color: $white;
+    border: 0;
+    font-family: $body-regular;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+
+    &.with-border {
+        border: px2rem(2) solid darken($color: $white, $amount: 20);
+    }
+
+    &.with-border:hover,
+    &.with-border:focus {
+        border-color: $primary;
+    }
+}
+
+.textarea {
+    resize: none;
+
+    &.sm {
+        min-height: px2rem(120)
+    }
+
+    &.md {
+        min-height: px2rem(220);
+    }
+
+    &.large {
+        min-height: px2rem(350);
+    }
+
+}

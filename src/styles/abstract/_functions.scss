@@ -1,0 +1,12 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+@function px2rem($px) {
+    @return #{$px/16}rem;
+}
+
+
+@function px2em($px) {
+    @return #{$px/16}em;
+}

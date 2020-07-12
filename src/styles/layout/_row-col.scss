@@ -1,0 +1,46 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-3,
+.col-sm-3,
+.col-xs-3 {
+    width: 33%
+}
+
+.col-md-2,
+.col-xs-2,
+.col-sm-2 {
+    width: 50%;
+}
+
+@media screen and (max-width: $tablet-screen) {
+    .col-md-3 {
+        width: 100%;
+    }
+
+    .col-md-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $mobile-screen) {
+    .col-sm-3 {
+        width: 100%;
+    }
+
+    .col-sm-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $xs-screen) {
+    .col-xs-2 {
+        width: 100%;
+    }
+
+    .col-xs-3 {
+        width: 100%;
+    }
+}

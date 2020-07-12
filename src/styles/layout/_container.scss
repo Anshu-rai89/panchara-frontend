@@ -1,0 +1,33 @@
+.container,
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+$widths: ('sm': $container-sm,
+    'md': $container-md,
+    'lg': $container-lg,
+    'xl': $container-xl,
+    'max': $max-container-width);
+
+.container,
+.wrapper {
+
+    &.above-padding {
+        padding-top: $navbar-height;
+    }
+
+    @each $name,
+    $width in $widths {
+        &.#{$name} {
+            max-width: $width;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-screen) {
+    .container.above-padding {
+        padding-top: $mobile-navbar-height;
+    }
+}

@@ -1,0 +1,19 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+$display: (none, block, flex, inline-flex, inline);
+
+@each $d in $display {
+    .#{$d} {
+        display: $d;
+    }
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}

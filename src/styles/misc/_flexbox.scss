@@ -1,0 +1,27 @@
+$alignment: (center, flex-start, flex-end, space-around, space-between, space-evenly, stretch);
+
+@each $a in $alignment {
+    .align-#{$a} {
+        align-items: $a;
+    }
+
+    .align-self-#{$a} {
+        align-self: $a;
+    }
+
+    .justify-#{$a} {
+        justify-content: $a;
+    }
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}

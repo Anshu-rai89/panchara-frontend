@@ -1,0 +1,53 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+// Fonts variables are defines in variables/_fonts.scss
+
+// Heading fonts
+@include font($heading-regular, '~@/assets/fonts/Montserrat/light.ttf', 'truetype');
+@include font($heading-bold, '~@/assets/fonts/Montserrat/bold.ttf', 'truetype');
+
+// Body fonts
+@include font($body-regular, '~@/assets/fonts/Open_Sans/light.ttf', 'truetype');
+@include font($body-bold, '~@/assets/fonts/Open_Sans/bold.ttf', 'truetype');
+
+.heading-regular {
+    font-family: $heading-regular;
+}
+
+.heading-bold {
+    font-family: $heading-bold;
+}
+
+.body-regular {
+    font-family: $body-regular;
+}
+
+.body-bold {
+    font-family: $body-bold;
+}
+
+.paragraph-large {
+    font-size: $paragraph-large;
+}
+
+.paragraph-small {
+    font-size: $paragraph-small;
+}
+
+.paragraph {
+    font-size: $paragraph;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

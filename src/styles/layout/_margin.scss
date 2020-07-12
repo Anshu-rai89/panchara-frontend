@@ -1,0 +1,19 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+*/
+
+$spaces: (4, 8, 16, 24, 32);
+
+$positions: (top, bottom, left, right);
+
+@each $space in $spaces {
+    @each $position in $positions {
+        .m-#{str-slice($position, 0,1)}-#{$space} {
+            margin-#{$position}: px2rem($space);
+        }
+
+        .p-#{str-slice($position, 0,1)}-#{$space} {
+            padding-#{$position}: px2rem($space);
+        }
+    }
+}

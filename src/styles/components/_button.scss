@@ -1,0 +1,43 @@
+/**
+ * @author Ankit Kumar <hello@ankdev.me> (https://ankdev.me)
+ */
+
+.button {
+    border: none;
+    cursor: pointer;
+    font-size: $paragraph;
+    min-width: px2rem(100);
+    padding: px2rem(8) px2rem(32);
+
+    &.icon {
+        align-items: center;
+        border-radius: 50%;
+        display: inline-flex;
+        font-size: 1.2rem;
+        justify-content: center;
+        height: 2rem;
+        min-width: 0;
+        padding: 0;
+        width: 2rem;
+    }
+
+    &.icon:hover {
+        background: rgba(0, 0, 0, 0.14);
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:disabled,
+    &[disabled],
+    &.disabled {
+        background: darken($color: $white, $amount: 10) !important;
+        color: lighten($color: $black, $amount: 40) !important;
+        pointer-events: none;
+    }
+
+    &.focus:focus {
+        outline: px2rem(2) dashed $black;
+    }
+}

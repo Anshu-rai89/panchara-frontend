@@ -1,0 +1,26 @@
+.breadcrumb {
+    margin-bottom: 3rem;
+
+    .wrapper {
+        border-bottom: px2rem(1) solid darken($color: $white, $amount: 10);
+        padding: 1rem;
+    }
+
+    .arrow {
+        color: #555;
+        margin: 0 1rem;
+    }
+
+    .link {
+        color: $black;
+        transition: 0.3s;
+    }
+
+    .link.router-link-active {
+        pointer-events: none;
+    }
+
+    .link:hover {
+        color: $primary;
+    }
+}
