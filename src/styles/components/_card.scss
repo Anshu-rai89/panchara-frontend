@@ -43,3 +43,32 @@
         transform: translateY(6rem);
     }
 }
+
+
+@media screen and (max-width: $tablet-screen) {
+
+    .card-section {
+        margin-top: 3rem;
+    }
+
+    .card-container {
+        margin: 1.3rem;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .card-row.translate {
+        padding-bottom: 1rem;
+        transform: translateY(0);
+
+        &:last-child {
+            padding-bottom: 1rem;
+        }
+
+        .card-container:nth-child(2n) {
+            transform: translateY(0);
+        }
+    }
+}
