@@ -9,7 +9,7 @@
 @include font($body-bold, '~@/assets/fonts/Montserrat/bold.ttf', 'truetype');
 
 // Body fonts
-@include font($heading-regular, '~@/assets/fonts/sansation/light.ttf', 'truetype');
+@include font($heading-regular, '~@/assets/fonts/sansation/regular.ttf', 'truetype');
 @include font($heading-bold, '~@/assets/fonts/sansation/bold.ttf', 'truetype');
 
 .heading-regular {
