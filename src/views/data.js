@@ -1,4 +1,5 @@
 import ShowCardImg from "@/assets/images/png/card-image.png";
+import ServicesCardImg from "@/assets/images/png/our-services.png";
 
 export const showCaseCard = [
     {
@@ -27,4 +28,20 @@ export const showCaseCard = [
     },
 ];
 
-export const servicesCard = [];
+export const servicesCard = [
+    {
+        img: ServicesCardImg,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        className: "",
+    },
+    {
+        img: ServicesCardImg,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        className: "",
+    },
+    {
+        img: ServicesCardImg,
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        className: "",
+    },
+];

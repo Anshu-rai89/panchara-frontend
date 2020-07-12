@@ -69,8 +69,8 @@
 
 .heading-container:before {
     left: 50%;
-    transform: translateX(-7rem);
-    width: 9rem;
+    transform: translateX(-5rem);
+    width: 7rem;
 }
 
 .heading {
@@ -81,9 +81,16 @@
     text-transform: uppercase;
 }
 
-.heading-para {
+.heading-para,
+.heading-bottom-para {
     font-family: $heading-regular;
     font-size: 1.2rem;
+}
+
+.heading-bottom-para {
+    margin: 3rem auto;
+    text-align: center;
+    width: 80%
 }
 
 @media screen and (max-width: $tablet-screen) {

@@ -13,8 +13,8 @@
         >
             <div
                 class="card-container"
-                v-for="(item, index) in items"
-                :key="item.title+index"
+                v-for="(item, key) in items"
+                :key="key+'card-container'+index"
             >
 
             <img class="card-img" :src="item.img" />
