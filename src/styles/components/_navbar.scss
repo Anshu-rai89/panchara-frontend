@@ -130,3 +130,19 @@ rgba(137, 91, 66, 0.81);
         }
     }
 }
+
+@media screen and (max-width: $mobile-screen) {
+    .navbar {
+        height: $mobile-navbar-height;
+
+        .logo {
+            height: 2rem;
+        }
+
+        .logo-title {
+            height: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+    }
+}
