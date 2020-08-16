@@ -4,7 +4,7 @@
         style="justify-content: center"
         id="contact-us"
   >
-      <div class="about-wrapper" style="max-width: 88rem; padding: 0 5rem;">
+      <div class="about-wrapper" style="max-width: 88rem;">
 
         <div class="flex-1 align-center justify-center">
             <div class="heading-container">
@@ -96,7 +96,7 @@
 }
 .contact-details {
     display: flex;
-
+    padding: 2rem;
     .item {
         display: flex;
         align-items: center;

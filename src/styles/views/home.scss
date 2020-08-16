@@ -122,6 +122,10 @@
         // }
     }
 
+    .contact-details {
+        flex-direction: column;
+    }
+
     .hide-small {
         display: none !important;
     }

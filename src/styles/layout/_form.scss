@@ -1,4 +1,7 @@
 .form {
+    margin-bottom: 3rem;
+    padding: 2rem;
+
     .input {
         background: rgba(255, 253, 234, 0.74);
         border: 0;
@@ -24,8 +27,6 @@
         border-radius: 0.4rem;
         color: #fff;
     }
-
-    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: $tablet-screen) {
