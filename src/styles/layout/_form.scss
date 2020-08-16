@@ -1,0 +1,36 @@
+.form {
+    .input {
+        background: rgba(255, 253, 234, 0.74);
+        border: 0;
+        border-radius: 0.3rem;
+        padding: 0.8rem;
+        font-family: $body-regular;
+        max-width: 25rem;
+        width: 100%;
+        font-size: 1rem;
+
+        &.textarea {
+            resize: none;
+            height: 15rem;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .button {
+        background: rgba(137, 91, 66, 0.81);
+        border-radius: 0.4rem;
+        color: #fff;
+    }
+
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: $tablet-screen) {
+
+    .form {
+        text-align: center;
+    }
+}

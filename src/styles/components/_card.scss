@@ -1,15 +1,65 @@
 .card-container {
     border-radius: 0.8rem 0.8rem 0 0;
     box-shadow: px2rem(8) 0 px2rem(30) rgba(0, 0, 0, 0.15);
-    height: px2rem(360);
+    height: px2rem(390);
     margin: 0 1.3rem;
     overflow: hidden;
+    position: relative;
     transition: 0.5s;
-    width: px2rem(320);
+    width: px2rem(340);
 }
 
 .card-container.shaded {
     background: #f8f7f7;
+    border-radius: 0.8rem;
+
+    .title {
+        position: absolute;
+        bottom: 0.2rem;
+        font-family: $body-bold;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .card-desc {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transition: 0.8s;
+        visibility: hidden;
+        opacity: 0;
+        text-align: left;
+    }
+
+    &:hover .card-desc {
+        visibility: visible;
+        opacity: 1;
+        background: $white;
+        color: $black;
+        cursor: default;
+    }
+
+    .card-desc ul {
+        list-style: none;
+        font-family: $body-regular;
+
+        li {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            height: 0.5rem;
+            width: 0.5rem;
+            background: rgba(137, 91, 66, 0.81);
+            left: 1rem;
+            top: 0.5rem;
+        }
+    }
 }
 
 .card-container.selected {
@@ -34,11 +84,22 @@
     }
 }
 
+.shaded .card-img-div {
+    height: 100%;
+    padding: 0;
+}
+
 .card-desc {
     font-family: $heading-regular;
     font-size: 1.2rem;
     padding: 1rem;
     text-align: center;
+}
+
+.card-heading {
+    font-family: $heading-bold;
+    text-align: center;
+    color: #895B42;
 }
 
 .card-row {
@@ -78,18 +139,18 @@
     .select-button {
         cursor: pointer;
         padding: 1rem 0;
-        margin: 0 2rem;
+        margin: 0 1rem;
 
         .background {
-            background: $black;
-            height: 0.2rem;
+            background: $white;
+            height: 0.8rem;
             transition: 0.3s;
-            width: 3rem;
+            width: 0.8rem;
+            border-radius: 50%;
         }
 
         &.selected .background {
-            height: 0.5rem;
-            width: 5rem;
+            transform: scale(2);
         }
     }
 }

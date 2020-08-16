@@ -13,8 +13,8 @@ export default [
         title: "Services",
         link: ROUTES.SERVICES,
     },
-    // {
-    //     title: "Contact Us",
-    //     link: ROUTES.CONTACT_US,
-    // },
+    {
+        title: "Contact Us",
+        link: ROUTES.CONTACT_US,
+    },
 ];

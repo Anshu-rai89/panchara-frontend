@@ -18,13 +18,17 @@
             >
 
             <img class="card-img" :src="item.img" />
-            <p class="card-desc">
-                {{ item.description }}
-            </p>
+            <div class="card-desc">
+                <h4 class="card-heading">
+                    {{item.heading}}
+                </h4>
+                <p>
+                    {{ item.description }}
+                </p>
+            </div>
             </div>
         </div>
     </div>
-    <hr class="hr" />
   </div>
 
 </template>

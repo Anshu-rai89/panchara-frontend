@@ -1,5 +1,5 @@
 <template>
-  <div class="section" id="services">
+  <div class="section section-dark" id="services">
       <div class="heading-container">
           <h3 class="heading">Our Services</h3>
       </div>
@@ -18,10 +18,24 @@
             >
                 <div class="card-img-div">
                     <img class="card-img" :src="item.img" />
+                    <h2 class="title">
+                        {{ item.title }}
+                    </h2>
                 </div>
-                <p class="card-desc">
-                    {{ item.description }}
-                </p>
+                <div class="card-desc">
+                    <p>
+                        {{ item.description }}
+                    </p>
+                    <ul>
+                        <li
+                            v-for="(list, key) in item.list"
+                            :key="key+'list'"
+                        >
+                            {{ list }}
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>

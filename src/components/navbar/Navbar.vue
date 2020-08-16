@@ -36,6 +36,7 @@ export default {
         navClick(path) {
             const about = document.getElementById("about-us").getBoundingClientRect();
             const service = document.getElementById("services").getBoundingClientRect();
+            const contact = document.getElementById("contact-us").getBoundingClientRect();
             const { height } = document.getElementById("header").getBoundingClientRect();
 
             switch (path) {
@@ -48,6 +49,10 @@ export default {
 
             case Route.SERVICES:
                 window.scrollBy(0, service.top - height);
+                break;
+
+            case Route.CONTACT_US:
+                window.scrollBy(0, contact.top - height);
                 break;
 
             default:

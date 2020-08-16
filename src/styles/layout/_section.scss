@@ -25,6 +25,11 @@
     }
 }
 
+.section-dark {
+    background: rgba(0, 0, 0, 0.87);
+    color: #fff;
+}
+
 @media screen and (max-width: $mobile-screen) {
     .section {
         &.p-t-b {

@@ -6,7 +6,7 @@
             <div class="round-card">
                 <img
                     style="height: 100%; width: 100%;"
-                    src="@/assets/images/png/card-image.png"
+                    src="@/assets/images/png/about-us.png"
                 />
             </div>
         </div>
@@ -14,10 +14,14 @@
             <div class="heading-container">
                 <h3 class="heading">About Us</h3>
             </div>
-            <p class="heading-bottom-para">
-                Centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in 2007
-                with the release of Letraset
+            <p class="about-us-p">
+                We specialize in understanding the requirements of our clients
+                by thorough analysis of their budget and goals. We investigate
+                the area of construction for sustainable site design and aim to
+                use minimal resources that supports green homelands. Risk
+                assessment is one of our paramount objective. The team focuses
+                on the modelling of energy-efficient buildings with proper
+                feasibility check and safety measures.
             </p>
         </div>
       </div>
