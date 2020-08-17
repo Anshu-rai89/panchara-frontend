@@ -1,5 +1,5 @@
 <template>
     <footer class="footer heading-bold">
-        @ Copyright @2020, PANCH HARA
+        @ Copyright @2020, PANCHA HARA
     </footer>
 </template>
