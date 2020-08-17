@@ -11,9 +11,14 @@
 // Body fonts
 @include font($heading-regular, '~@/assets/fonts/sansation/regular.ttf', 'truetype');
 @include font($heading-bold, '~@/assets/fonts/sansation/bold.ttf', 'truetype');
+@include font($heading-italic, '~@/assets/fonts/sansation/italic.ttf', 'truetype');
 
 .heading-regular {
     font-family: $heading-regular;
+}
+
+.heading-italic {
+    font-family: $heading-italic;
 }
 
 .heading-bold {

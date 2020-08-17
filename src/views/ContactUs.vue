@@ -100,8 +100,9 @@
     .item {
         display: flex;
         align-items: center;
-        font-family: $body-regular;
+        font-family: $body-bold;
         margin-right: 2rem;
+        font-size: 1.2rem;
     }
 
     .icon {
