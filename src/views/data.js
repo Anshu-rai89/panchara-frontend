@@ -46,7 +46,7 @@ export const showCaseCard = [
     },
     {
         img: two,
-        heading: "GREEN OFFICE",
+        heading: "GREEN OFFICES",
         description: "Healthy buildings save energy hence improving productivity at workplace.",
     },
     {

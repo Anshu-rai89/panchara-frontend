@@ -96,7 +96,9 @@
 }
 .contact-details {
     display: flex;
+    flex-direction: column;
     padding: 2rem;
+
     .item {
         display: flex;
         align-items: center;
@@ -106,7 +108,7 @@
     }
 
     .icon {
-        height: 1rem;
+        width: 1.5rem;
         margin-right: 1rem;
     }
 

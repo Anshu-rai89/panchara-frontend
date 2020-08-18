@@ -19,7 +19,7 @@
                 by thorough analysis of their budget and goals. We investigate
                 the area of construction for sustainable site design and aim to
                 use minimal resources that supports green homelands. Risk
-                assessment is one of our paramount objective. The team focuses
+                assessment is one of our paramount objectives. The team focuses
                 on the modelling of energy-efficient buildings with proper
                 feasibility check and safety measures.
             </p>

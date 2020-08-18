@@ -5,19 +5,26 @@
         class="landing-hero-img"
         />
         <div class="landing-title">
-            <span class="primary-text body-bold">Nature</span>
+            <span class="primary-text body-regular">Nature</span>
             <span class="dot" />
-            <span class="black-text body-bold">Home</span>
+            <span class="black-text body-regular">Home</span>
         </div>
 
         <div class="landing-card-container">
-          <div
-            class="landing-card"
-            v-for="(item, key) in landingCard"
-            :key="'landign-card'+key"
-          >
-            <img :src="item.img" :alt="item.title">
-            {{ item.title }}
+          <div class="card-wrapper">
+            <div
+              class="landing-card"
+              v-for="(item, key) in landingCard"
+              :key="'landign-card'+key"
+            >
+              <img :src="item.img" :alt="item.title">
+              {{ item.title }}
+            </div>
+          </div>
+          <div class="content">
+            Military grade pre-fabricated shelter systems and CBRE
+            (chemical, biological, radioactive and explosive)
+            equipments augmented with air filtration, blast doors and valves are utilized
           </div>
         </div>
   </div>
@@ -28,11 +35,32 @@
 
   .landing-card-container {
     display: flex;
-    flex-direction: column;
     position: absolute;
 
     top: 4%;
-    right: -5rem;
+    right: -15rem;
+    transition: 0.5s;
+
+    &:hover {
+      transform: translate(-15rem)
+    }
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 10rem;
+    background: $black;
+    color: $white;
+    font-family: $body-regular;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
   }
 
   .landing-card {
@@ -50,9 +78,9 @@
     border-bottom: 0.25rem solid #000;
     transition: 0.3s;
 
-    &:hover {
-      transform: translate(-5rem);
-    }
+    // &:hover {
+    //   transform: translate(-5rem);
+    // }
 
     &:first-child {
       border-top-width: 0.5rem;

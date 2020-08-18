@@ -5,7 +5,7 @@
 // Fonts variables are defines in variables/_fonts.scss
 
 // Heading fonts
-@include font($body-regular, '~@/assets/fonts/Montserrat/light.ttf', 'truetype');
+@include font($body-regular, '~@/assets/fonts/Montserrat/medium.ttf', 'truetype');
 @include font($body-bold, '~@/assets/fonts/Montserrat/bold.ttf', 'truetype');
 
 // Body fonts

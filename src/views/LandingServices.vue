@@ -4,9 +4,15 @@
           <h3 class="heading">Our Services</h3>
       </div>
         <p class="heading-bottom-para">
-            Centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in 2007
-            with the release of Letraset
+            Our motive emphasizes on Sustainable Development and our
+            services strive in the accomplishment of the same. We offer
+            to prioritize complete designing and analysis of command
+            and control centres, continuity of Government facilities
+            in addition to communication centers with attention to details
+            over Burst Slab designs, Full Blast Engineering and Mitigation
+            designs. Alongwith a broad spectrum of technolgies, we deploy
+            strong engineering manpower to build solutions that meet each
+            project’s essentials.
         </p>
 
     <div class="card-section pad">
