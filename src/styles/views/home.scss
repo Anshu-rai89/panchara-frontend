@@ -57,20 +57,20 @@
     background: $primary;
     bottom: -1.5rem;
     content: '';
-    height: 0.8rem;
+    height: 0.5rem;
     position: absolute;
 }
 
 .heading-container:after {
     right: 50%;
-    transform: translateX(5.6rem);
-    width: 3rem;
+    transform: translateX(7.6rem);
+    width: 5rem;
 }
 
 .heading-container:before {
     left: 50%;
-    transform: translateX(-5rem);
-    width: 7rem;
+    transform: translateX(-9rem);
+    width: 11rem;
 }
 
 .heading {
